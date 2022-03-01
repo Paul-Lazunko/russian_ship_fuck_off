@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  bombardier:
+    image: pashaman/rsfo
+    env_file:
+      - .env
+    restart: unless-stopped
+
+
+
