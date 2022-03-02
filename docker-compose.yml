@@ -6,6 +6,11 @@ services:
     env_file:
       - .env
     restart: unless-stopped
+  bombardieracf:
+    image: pashaman/rsfocf
+    env_file:
+      - .env
+    restart: unless-stopped
 
 
 

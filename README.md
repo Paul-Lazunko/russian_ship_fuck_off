@@ -10,6 +10,6 @@ Run it via docker-compose:
 
 ```shell
 
-docker-compose up -d --scale bombardier=10
+docker-compose up -d --scale bombardier=8 bombardieracf=8
 
 ```
