@@ -4,31 +4,13 @@ services:
   rsfo1:
     image: pashaman/rsfo
     environment:
-      - TARGET=lenta.ru
+      - TARGET='91.194.185.0:24'
     restart: unless-stopped
 
   rsfo2:
     image: pashaman/rsfo
     environment:
-      - TARGET=peru.mid.ru
-    restart: unless-stopped
-
-  rsfo3:
-      image: pashaman/rsfo
-      environment:
-        - TARGET=kp.ru
-      restart: unless-stopped
-
-  rsfo4:
-    image: pashaman/rsfo
-    environment:
-      - TARGET=mid.ru
-    restart: unless-stopped
-
-  rsfo5:
-    image: pashaman/rsfocf
-    environment:
-      - TARGET=mid.ru
+      - TARGET='91.194.184.0:24'
     restart: unless-stopped
 
 
