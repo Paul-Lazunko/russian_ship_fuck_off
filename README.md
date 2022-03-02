@@ -6,10 +6,10 @@ TARGET=company.rt.ru
 
 ```
 
-Run it via docker-compose:
+Run it via docker-compose at the VPS:
 
 ```shell
 
-docker-compose up -d --scale bombardier=8 bombardieracf=8
+docker-compose up -d --scale rsfo1=8 rsfo2=8 rsfo3=8  rsfo4=8 rsfo5=8
 
 ```

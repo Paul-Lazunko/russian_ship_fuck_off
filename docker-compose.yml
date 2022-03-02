@@ -1,16 +1,34 @@
 version: "3"
 
 services:
-  bombardier:
+  rsfo1:
     image: pashaman/rsfo
-    env_file:
-      - .env
+    entrypoint:
+      - TARGET=lenta.ru
     restart: unless-stopped
 
-  bombardieracf:
+  rsfo2:
+    image: pashaman/rsfo
+    entrypoint:
+      - TARGET=mid.ru
+    restart: unless-stopped
+
+  rsfo3:
+      image: pashaman/rsfo
+      entrypoint:
+        - TARGET=kp.ru
+      restart: unless-stopped
+
+  rsfo4:
+    image: pashaman/rsfo
+    entrypoint:
+      - TARGET=mid.ru
+    restart: unless-stopped
+
+  rsfo5:
     image: pashaman/rsfocf
-    env_file:
-      - .env
+    entrypoint:
+      - TARGET=rusvesna.su
     restart: unless-stopped
 
 
