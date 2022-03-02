@@ -4,13 +4,13 @@ services:
   rsfo1:
     image: pashaman/rsfo
     environment:
-      - TARGET='91.194.185.0:24'
+      - TARGET="91.194.185.0:24"
     restart: unless-stopped
 
   rsfo2:
     image: pashaman/rsfo
     environment:
-      - TARGET='91.194.184.0:24'
+      - TARGET="91.194.184.0:24"
     restart: unless-stopped
 
 
