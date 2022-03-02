@@ -10,7 +10,7 @@ services:
   rsfo2:
     image: pashaman/rsfo
     environment:
-      - TARGET=mid.ru
+      - TARGET=peru.mid.ru
     restart: unless-stopped
 
   rsfo3:
@@ -28,7 +28,7 @@ services:
   rsfo5:
     image: pashaman/rsfocf
     environment:
-      - TARGET=rusvesna.su
+      - TARGET=mid.ru
     restart: unless-stopped
 
 
