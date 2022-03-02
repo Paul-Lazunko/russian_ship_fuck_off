@@ -3,31 +3,31 @@ version: "3"
 services:
   rsfo1:
     image: pashaman/rsfo
-    entrypoint:
+    environment:
       - TARGET=lenta.ru
     restart: unless-stopped
 
   rsfo2:
     image: pashaman/rsfo
-    entrypoint:
+    environment:
       - TARGET=mid.ru
     restart: unless-stopped
 
   rsfo3:
       image: pashaman/rsfo
-      entrypoint:
+      environment:
         - TARGET=kp.ru
       restart: unless-stopped
 
   rsfo4:
     image: pashaman/rsfo
-    entrypoint:
+    environment:
       - TARGET=mid.ru
     restart: unless-stopped
 
   rsfo5:
     image: pashaman/rsfocf
-    entrypoint:
+    environment:
       - TARGET=rusvesna.su
     restart: unless-stopped
 
